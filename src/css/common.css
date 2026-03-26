@@ -72,3 +72,54 @@ body a:hover {
     top: 0;
     color: #fff;
 }
+
+/* Button reset for dropdown toggles */
+button.nav-link.dropdown-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+    text-align: left;
+    width: 100%;
+}
+
+button.nav-link.dropdown-toggle:hover {
+    color: hsla(0, 0%, 100%, .75);
+}
+
+/* Focus indicators for nav elements */
+.navbar .nav-link:focus,
+.navbar .dropdown-toggle:focus,
+.navbar .dropdown-item:focus,
+.btn.font-increase-button:focus,
+.btn.font-decrease-button:focus,
+.navbar-toggler:focus {
+    outline: 2px solid #007bff;
+    outline-offset: 2px;
+}
+
+.dropdown-item:focus {
+    outline-offset: -2px;
+}
+
+/* Font-size scaling classes */
+html:has(body.font-large) {
+    font-size: 1.25rem;
+}
+
+html:has(body.font-xlarge) {
+    font-size: 1.5rem;
+}
+
+/* Visually hidden live region */
+.sr-live-region {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
