@@ -2,3 +2,10 @@
     margin: auto;
     width: 80%
 }
+
+.table caption {
+    caption-side: top;
+    text-align: center;
+    font-weight: bold;
+    color: #333;
+}
