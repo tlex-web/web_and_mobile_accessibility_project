@@ -122,13 +122,16 @@
 
     <main class="container mt-4 main" id="main" tabindex="-1">
         <div class="p-5 bg-white">
-            <div class="text-primary text-center mb-4 title">Global temperature record shows 2016 as the warmest year on record</div>
-            <div class="text-center wrapper">
-                <img src="./img/temperature.jpg" class="figure-img img-fluid" alt="">
-                <p class="figure-caption text-center px-5">The graphic shows the global mean surface temperature change since 1880 till nowadays. The grey curve indicates
+            <h1 class="text-primary text-center mb-4 title">Global temperature record shows 2016 as the warmest year on record</h1>
+            <figure class="text-center wrapper">
+                <img src="./img/temperature.jpg" class="figure-img img-fluid"
+                     alt="Line chart showing global mean surface temperature change from 1880 to present"
+                     aria-describedby="temp-chart-desc">
+                <figcaption class="figure-caption text-center px-5">The graphic shows the global mean surface temperature change since 1880 till nowadays. The grey curve indicates
                     the annual average temperature and the black curve shows the smoothed result. Over the last two centuries,
-                    the mean tempurature has increased by around 1 degree Celcius.</p>
-            </div>
+                    the mean tempurature has increased by around 1 degree Celcius.</figcaption>
+                <div id="temp-chart-desc" class="sr-only">The chart displays a line graph of global mean surface temperature anomaly from 1880 to approximately 2016. Temperatures remained relatively stable with minor fluctuations until around 1980, after which a sharp upward trend is visible, reaching approximately 1 degree Celsius above the 1951-1980 baseline by 2016.</div>
+            </figure>
             <p>The global temperature record shows the fluctuations of the temperature of the atmosphere and the oceans through
                 various spans of time. The recently data published by NASA is one of the most detailed information exists
                 since 1850, when methodical thermometer-based records began.
