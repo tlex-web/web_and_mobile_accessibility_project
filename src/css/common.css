@@ -7,14 +7,27 @@ html {
     height: 100%
 }
 
-body a,
-body div,
-body p {
-    color: #dfdfdf
+/* Phase 3: Contrast fixes -- WCAG 2.1 AA 4.5:1 minimum (per D-01, D-02) */
+body p,
+body div {
+    color: #212529;
+}
+
+body a {
+    color: #1a5c3a;
 }
 
 body a:hover {
-    color: #cdcdcd
+    color: #0d3520;
+}
+
+/* Override Bootstrap utility classes -- need !important to beat Bootstrap's !important (per D-03) */
+.text-primary {
+    color: #2e4a45 !important;
+}
+
+.text-info {
+    color: #1a5c3a !important;
 }
 
 .title {
