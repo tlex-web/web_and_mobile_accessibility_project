@@ -6,67 +6,6 @@
 
 ---
 
-## Project at a Glance
-
-| | |
-|---|---|
-| **Goal** | Fix all accessibility barriers in a provided sample website |
-| **Standard** | WCAG 2.1 Level AA |
-| **Pages** | 4 (`index.html`, `login.html`, `article.html`, `empty.html`) |
-| **Exercises** | 7 / 7 completed |
-| **Requirements** | 34 / 34 satisfied |
-| **Test Items** | 85 / 85 passed |
-| **WAVE Errors** | 0 across all pages |
-| **Timeline** | 5 days, 8 phases, 16 plans |
-
----
-
-## Progress Overview
-
-### Exercises Completed
-
-```
-Exercise 1  Site Exploration            [##########] Done
-Exercise 2  Accessible Design           [##########] Done
-Exercise 3  Accessible Navigation       [##########] Done
-Exercise 4  Accessible Forms            [##########] Done
-Exercise 5  Accessible Images           [##########] Done
-Exercise 6  Accessible Tables           [##########] Done
-Exercise 7  Accessibility Testing       [##########] Done
-```
-
-### Requirements by Category
-
-```
-DSGN  (Design)       ||||| 5/5    100%  ====================
-NAV   (Navigation)   |||||||| 8/8 100%  ====================
-FORM  (Forms)        |||||| 6/6   100%  ====================
-IMG   (Images)       ||| 3/3     100%  ====================
-TBL   (Tables)       ||| 3/3     100%  ====================
-EXPL  (Exploration)  ||| 3/3     100%  ====================
-TEST  (Testing)      |||| 4/4    100%  ====================
-DLVR  (Deliverables) || 2/2     100%  ====================
-────────────────────────────────────────
-Total                    34/34   100%
-```
-
-### Testing Results per Page
-
-```
-              WAVE     CSS-Off    JAWS     Total
-            ┌────────┬─────────┬────────┬────────┐
-index.html  │  7/7   │   7/7   │ 13/13  │ 27/27  │
-login.html  │  7/7   │   5/5   │ 10/10  │ 22/22  │
-article.html│  7/7   │   6/6   │  9/9   │ 22/22  │
-empty.html  │  5/5   │   4/4   │  5/5   │ 14/14  │
-            ├────────┼─────────┼────────┼────────┤
-Total       │ 26/26  │  22/22  │ 37/37  │ 85/85  │
-            └────────┴─────────┴────────┴────────┘
-                         ALL PASSING
-```
-
----
-
 ## Exercises
 
 ### Exercise 1: Site Exploration
@@ -361,24 +300,6 @@ python -m http.server 8000
 
 ---
 
-## Phase Execution Timeline
-
-```
-Phase   Description                   Plans   Completed
-─────   ───────────────────────────   ─────   ──────────
-  1     Structural Skeleton           2/2     2026-03-26
-  2     Navigation Keyboard & ARIA    3/3     2026-03-26
-  3     Contrast & Page Content       2/2     2026-03-28
-  4     Accessible Forms              2/2     2026-03-27
-  5     Accessible Table              1/1     2026-03-27
-  6     Testing & Deliverables        2/2     2026-03-28
-  7     Verification Reconciliation   2/2     2026-03-30
-  8     Human Testing Execution       2/2     2026-03-30
-─────────────────────────────────────────────────────────
-        Total                        16/16    All passed
-```
-
----
 
 ## Key Design Decisions
 
@@ -401,17 +322,3 @@ Phase   Description                   Plans   Completed
 4. **Keyboard operability and screen reader usability are different things** — a site can be fully keyboard-operable but still unusable without semantic structure
 
 ---
-
-## Deliverables
-
-| Deliverable | Weight | Status |
-|-------------|--------|--------|
-| Fixed implementation (4 pages, WCAG 2.1 AA) | 80% | Complete |
-| 10-minute presentation with live JAWS demo | 10% | Outline ready |
-| Reflective report (exercises 1-7) | 10% | Outline ready |
-
----
-
-## Team
-
-University of Zurich — Web and Mobile Accessibility Course (Spring 2026)
