@@ -125,15 +125,6 @@ button.nav-link.dropdown-toggle:hover {
     outline-offset: -2px;
 }
 
-/* Font-size scaling classes */
-html:has(body.font-large) {
-    font-size: 1.25rem;
-}
-
-html:has(body.font-xlarge) {
-    font-size: 1.5rem;
-}
-
 /* Visually hidden live region */
 .sr-live-region {
     position: absolute;
