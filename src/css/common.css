@@ -125,6 +125,19 @@ button.nav-link.dropdown-toggle:hover {
     outline-offset: -2px;
 }
 
+/* Sub-title headings: keep paragraph-sized text */
+h3.sub-title {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Focus indicator for focusable headings */
+h2.title:focus,
+h3.sub-title:focus {
+    outline: 2px solid #007bff;
+    outline-offset: 2px;
+}
+
 /* Visually hidden live region */
 .sr-live-region {
     position: absolute;
