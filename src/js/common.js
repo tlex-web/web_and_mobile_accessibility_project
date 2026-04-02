@@ -48,6 +48,24 @@ function toggleNavigation(event) {
     }
 }
 
+/** High contrast mode localStorage key */
+var HIGH_CONTRAST_KEY = 'highContrast';
+
+/**
+ * Toggle high contrast mode on/off
+ */
+function toggleHighContrast() {
+    var isActive = document.body.classList.toggle('high-contrast');
+    localStorage.setItem(HIGH_CONTRAST_KEY, isActive ? 'on' : 'off');
+
+    var buttons = document.querySelectorAll('.high-contrast-button');
+    for (var i = 0; i < buttons.length; i++) {
+        buttons[i].setAttribute('aria-pressed', isActive ? 'true' : 'false');
+    }
+
+    announceFontSize(isActive ? 'High contrast mode: on' : 'High contrast mode: off');
+}
+
 /** Font size levels and localStorage key */
 var FONT_SIZES = ['normal', 'large', 'xlarge'];
 var FONT_SIZE_KEY = 'fontSize';
@@ -152,5 +170,20 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     for (var k = 0; k < decreaseButtons.length; k++) {
         decreaseButtons[k].addEventListener('click', decreaseFontSize, false);
+    }
+
+    // Restore high contrast from localStorage
+    if (localStorage.getItem(HIGH_CONTRAST_KEY) === 'on') {
+        document.body.classList.add('high-contrast');
+        var hcButtons = document.querySelectorAll('.high-contrast-button');
+        for (var m = 0; m < hcButtons.length; m++) {
+            hcButtons[m].setAttribute('aria-pressed', 'true');
+        }
+    }
+
+    // High contrast button listeners
+    var contrastButtons = document.querySelectorAll('.high-contrast-button');
+    for (var n = 0; n < contrastButtons.length; n++) {
+        contrastButtons[n].addEventListener('click', toggleHighContrast, false);
     }
 }, false);

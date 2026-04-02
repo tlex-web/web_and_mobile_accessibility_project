@@ -116,6 +116,7 @@ button.nav-link.dropdown-toggle:hover {
 .navbar .dropdown-item:focus,
 .btn.font-increase-button:focus,
 .btn.font-decrease-button:focus,
+.btn.high-contrast-button:focus,
 .navbar-toggler:focus {
     outline: 2px solid #007bff;
     outline-offset: 2px;
@@ -136,6 +137,136 @@ h2.title:focus,
 h3.sub-title:focus {
     outline: 2px solid #007bff;
     outline-offset: 2px;
+}
+
+/* High contrast button styling */
+.high-contrast-button {
+    font-size: .7rem;
+    font-weight: bold;
+}
+
+/* High contrast mode */
+body.high-contrast {
+    background-color: #000 !important;
+    color: #fff !important;
+}
+
+body.high-contrast p,
+body.high-contrast div,
+body.high-contrast span,
+body.high-contrast li,
+body.high-contrast td,
+body.high-contrast th,
+body.high-contrast label,
+body.high-contrast legend,
+body.high-contrast figcaption,
+body.high-contrast caption {
+    color: #fff !important;
+}
+
+body.high-contrast .bg-light {
+    background-color: #000 !important;
+}
+
+body.high-contrast .bg-white,
+body.high-contrast .news,
+body.high-contrast .studies,
+body.high-contrast .researches {
+    background-color: #1a1a1a !important;
+    color: #fff !important;
+}
+
+body.high-contrast a {
+    color: #6fc3ff !important;
+}
+
+body.high-contrast a:hover {
+    color: #a3daff !important;
+}
+
+body.high-contrast .text-primary {
+    color: #7ecfff !important;
+}
+
+body.high-contrast .text-info {
+    color: #6fc3ff !important;
+}
+
+body.high-contrast .text-secondary {
+    color: #bbb !important;
+}
+
+body.high-contrast .header .title {
+    color: #fff !important;
+}
+
+body.high-contrast .footer a {
+    color: #6fc3ff !important;
+}
+
+body.high-contrast .news .media {
+    border-bottom-color: #555;
+}
+
+body.high-contrast input,
+body.high-contrast select,
+body.high-contrast textarea {
+    background-color: #1a1a1a !important;
+    color: #fff !important;
+    border-color: #888 !important;
+}
+
+body.high-contrast .btn-dark {
+    background-color: #333 !important;
+    border-color: #888 !important;
+    color: #fff !important;
+}
+
+body.high-contrast .high-contrast-button[aria-pressed="true"] {
+    background-color: #fff !important;
+    color: #000 !important;
+    border-color: #fff !important;
+}
+
+body.high-contrast .table {
+    color: #fff !important;
+}
+
+body.high-contrast .table td,
+body.high-contrast .table th {
+    border-color: #555 !important;
+}
+
+body.high-contrast .dropdown-menu {
+    background-color: #1a1a1a !important;
+    border-color: #555 !important;
+}
+
+body.high-contrast .dropdown-item {
+    color: #fff !important;
+}
+
+body.high-contrast .dropdown-item:hover,
+body.high-contrast .dropdown-item:focus {
+    background-color: #333 !important;
+    color: #fff !important;
+}
+
+body.high-contrast h1,
+body.high-contrast h2,
+body.high-contrast h3,
+body.high-contrast h4,
+body.high-contrast h5,
+body.high-contrast h6 {
+    color: #fff !important;
+}
+
+body.high-contrast h2.text-primary {
+    color: #7ecfff !important;
+}
+
+body.high-contrast h3.text-info a {
+    color: #6fc3ff !important;
 }
 
 /* Visually hidden live region */
